@@ -1,5 +1,5 @@
-
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Define the Project type
 type Project = {
@@ -101,9 +101,18 @@ export default function Projects() {
             <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
               Our <span className="text-warmOrange">Projects</span>
             </h1>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 mb-4">
               Explore our portfolio of completed and ongoing construction projects.
             </p>
+            <Link 
+              to="/vijaya-builders/admin" 
+              className="text-warmOrange hover:text-orange-600 font-medium inline-flex items-center"
+            >
+              Go to Admin Panel
+              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
