@@ -26,9 +26,6 @@ export default function NavBar() {
             <Link to="/about" className="text-darkText hover:text-warmOrange transition-colors font-inter">
               About Us
             </Link>
-            <Link to="/products" className="text-darkText hover:text-warmOrange transition-colors font-inter">
-              Products
-            </Link>
             <Link to="/services" className="text-darkText hover:text-warmOrange transition-colors font-inter">
               Services
             </Link>
@@ -73,13 +70,6 @@ export default function NavBar() {
               onClick={() => setIsOpen(false)}
             >
               About Us
-            </Link>
-            <Link 
-              to="/products" 
-              className="block px-3 py-2 rounded-md text-base font-medium text-darkText hover:bg-warmPeach hover:text-warmOrange"
-              onClick={() => setIsOpen(false)}
-            >
-              Products
             </Link>
             <Link 
               to="/services" 
