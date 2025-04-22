@@ -35,6 +35,9 @@ export default function NavBar() {
             <Link to="/contact" className="text-darkText hover:text-warmOrange transition-colors font-inter">
               Contact Us
             </Link>
+            <Link to="/admin" className="text-warmOrange hover:text-orange-600 transition-colors font-inter">
+              Admin
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -91,6 +94,13 @@ export default function NavBar() {
               onClick={() => setIsOpen(false)}
             >
               Contact Us
+            </Link>
+            <Link 
+              to="/admin" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-warmOrange hover:bg-warmPeach hover:text-warmOrange"
+              onClick={() => setIsOpen(false)}
+            >
+              Admin
             </Link>
           </div>
         </div>

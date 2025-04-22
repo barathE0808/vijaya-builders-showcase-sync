@@ -27,7 +27,7 @@ const App = () => (
           <Route path="/services" element={<Layout><Services /></Layout>} />
           <Route path="/projects" element={<Layout><Projects /></Layout>} />
           <Route path="/contact" element={<Layout><Contact /></Layout>} />
-          <Route path="/vijaya-builders/admin" element={<AdminPanel />} />
+          <Route path="admin" element={<AdminPanel />} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>
